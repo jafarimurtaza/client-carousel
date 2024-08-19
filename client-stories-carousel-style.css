@@ -1,0 +1,250 @@
+
+.onepoint-client-carousel-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  
+  .onepoint-client-carousel-parent {
+    width: 100%;
+  }
+  
+  @media (min-width: 640px) {
+    .onepoint-client-carousel-parent {
+      max-width: 640px;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .onepoint-client-carousel-parent {
+      max-width: 768px;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .onepoint-client-carousel-parent {
+      max-width: 1024px;
+    }
+  }
+  
+  @media (min-width: 1280px) {
+    .onepoint-client-carousel-parent {
+      max-width: 1280px;
+    }
+  }
+  
+  @media (min-width: 1536px) {
+    .onepoint-client-carousel-parent {
+      max-width: 1536px;
+    }
+  }
+  
+  .onepoint-client-carousel-parent {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+  
+  @media (min-width: 640px) {
+    .onepoint-client-carousel-parent {
+      padding-top: 3rem;
+      padding-bottom: 3rem;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .onepoint-client-carousel-parent {
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+  }
+  
+  .onepoint-client-carousel-arrow-left {
+    position: absolute;
+    left: -1rem;
+    top: 50%;
+    z-index: 50;
+    width: 4rem;
+    --tw-translate-y: -50%;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+    cursor: pointer;
+  }
+  
+  @media (min-width: 1024px) {
+    .onepoint-client-carousel-arrow-left {
+      left: -4rem;
+      width: 8rem;
+    }
+  }
+  
+  .onepoint-client-carousel-arrow-right {
+    position: absolute;
+    right: -1rem;
+    top: 50%;
+    z-index: 50;
+    width: 4rem;
+    --tw-translate-y: -50%;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+    cursor: pointer;
+  }
+  
+  @media (min-width: 1024px) {
+    .onepoint-client-carousel-arrow-right {
+      right: -4rem;
+      width: 8rem;
+    }
+  }
+  
+  .onepoint-client-carousel-inner {
+    position: relative;
+    display: flex;
+    width: 100%;
+    transition-property: transform;
+    transition-duration: 500ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .onepoint-client-carousel-item {
+    position: relative;
+    display: flex;
+    width: 100%;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    flex-direction: column;
+    place-content: center;
+    align-items: center;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+  
+  @media (min-width: 1024px) {
+    .onepoint-client-carousel-item {
+      display: grid;
+      gap: 2.5rem;
+      padding: 1rem;
+      padding-left: 3rem;
+      padding-right: 3rem;
+    }
+  }
+  
+  .onepoint-client-carousel-description {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .onepoint-client-carousel-description > div {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .onepoint-client-carousel-description > div > img {
+    max-width: 170px;
+  }
+  
+  .onepoint-client-carousel-description > div > p {
+    padding: 3rem;
+    text-align: left;
+    font-size: 13px;
+    --tw-text-opacity: 1;
+    color: rgb(0 0 0 / var(--tw-text-opacity));
+  }
+  
+  @media (min-width: 1024px) {
+    .onepoint-client-carousel-description > div > p {
+      margin-top: 1rem;
+      padding: 2.5rem;
+      font-size: 16px;
+    }
+  }
+  
+  .onepoint-client-carousel-video-iframe {
+    position: relative;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .onepoint-client-carousel-video-iframe > iframe {
+    max-width: -moz-min-content;
+    max-width: min-content;
+  }
+  
+  @media (min-width: 768px) {
+    .onepoint-client-carousel-video-iframe > iframe {
+      height: calc(5vh + 10rem);
+      max-width: 24rem;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .onepoint-client-carousel-video-iframe > iframe {
+      max-width: 25rem;
+    }
+  }
+  
+  @media (min-width: 1536px) {
+    .onepoint-client-carousel-video-iframe > iframe {
+      height: 100%;
+      max-width: 64rem;
+    }
+  }
+  
+  .onepoint-client-carousel-video-iframe > iframe {
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  
+  @media screen and (min-width: 640px) {
+    .onepoint-client-carousel-video-iframe > iframe {
+      aspect-ratio: 16/9;
+    }
+  }
+  
+  /* Carousel container */
+  
+  .carousel-container {
+    display: flex;
+    overflow: hidden;
+    /* Hide overflow to ensure only one slide is visible */
+    transition: transform 0.5s ease-in-out;
+    /* Smooth transition effect */
+    width: 100%;
+    /* Full width */
+  }
+  
+  /* Carousel items */
+  
+  .carousel-item {
+    flex: 0 0 100%;
+    /* Each item takes up 100% of the container's width */
+    box-sizing: border-box;
+    /* Ensure padding and border are included in width */
+  }
+  
+  .dot {
+    background-color: #A6A6A6;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 0 4px;
+  }
+  
+  .dot.active {
+    background-color: rgb(0, 0, 0);
+  }
+  
