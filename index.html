@@ -235,16 +235,8 @@
         }
     }
 
-    /* Carousel container */
-    .carousel-container {
-        display: flex;
-        overflow: hidden;
-        transition: transform 0.5s ease-in-out;
-        width: 100%;
-    }
-
     /* Carousel items */
-    .carousel-item {
+    .onepoint-client-carousel-item {
         flex: 0 0 100%;
         box-sizing: border-box;
     }
@@ -263,6 +255,7 @@
     }
 </style>
 
+<!-- Carousel body -->
 <section class="onepoint-client-carousel-parent">
 
     <h1>
@@ -272,15 +265,15 @@
     <!-- Carousel Wrapper -->
     <div class="onepoint-client-carousel-wrapper">
         <!-- arrow left -->
-        <div class="onepoint-client-carousel-arrow-left left-arrow">
+        <div class="onepoint-client-carousel-arrow-left">
             <img src="https://cdn-icons-png.flaticon.com/512/130/130884.png" alt="Left Arrow" />
         </div>
 
         <!-- Carousel Inner Container -->
-        <div class="carousel-inner onepoint-client-carousel-inner">
+        <div class="onepoint-client-carousel-inner">
             <!-- Carousel Item 1 -->
 
-            <div class="carousel-item onepoint-client-carousel-item">
+            <div class="onepoint-client-carousel-item">
                 <!-- text and logo -->
                 <div class="onepoint-client-carousel-description">
                     <div>
@@ -298,14 +291,14 @@
 
                 <!-- Carousel video -->
                 <div class="onepoint-client-carousel-video-iframe">
-                    <iframe title="vimeo-player" name="carousel video "
+                    <iframe title="vimeo-player"
                         src="https://player.vimeo.com/video/395525780?title=0&byline=0&portrait=0%3Fapi%3D1&api=1"
                         width="640" height="360" frameborder="0" allowfullscreen></iframe>
                 </div>
             </div>
 
             <!-- Carousel Item 2 -->
-            <div class="carousel-item onepoint-client-carousel-item">
+            <div class="onepoint-client-carousel-item">
                 <!-- text and logo -->
                 <div class="onepoint-client-carousel-description">
                     <div>
@@ -322,14 +315,14 @@
 
                 <!-- Carousel video -->
                 <div class="onepoint-client-carousel-video-iframe">
-                    <iframe title="vimeo-player" name="carousel video "
+                    <iframe title="vimeo-player"
                         src="https://player.vimeo.com/video/395528711?title=0&byline=0&portrait=0%3Fapi%3D1&api=1"
                         width="640" height="360" frameborder="0" allowfullscreen></iframe>
                 </div>
             </div>
 
             <!-- Carousel Item 3 -->
-            <div class="carousel-item onepoint-client-carousel-item">
+            <div class="onepoint-client-carousel-item">
                 <!-- text and logo -->
                 <div class="onepoint-client-carousel-description">
                     <div>
@@ -345,14 +338,14 @@
 
                 <!-- Carousel video -->
                 <div class="onepoint-client-carousel-video-iframe">
-                    <iframe title="vimeo-player" name="carousel video "
+                    <iframe title="vimeo-player"
                         src="https://player.vimeo.com/video/395530593?title=0&byline=0&portrait=0?api=1&api=1&player_id=vvvvimeoVideo-4690244"
                         width="640" height="360" frameborder="0" allowfullscreen></iframe>
                 </div>
             </div>
 
             <!-- Carousel Item 4 -->
-            <div class="carousel-item onepoint-client-carousel-item">
+            <div class="onepoint-client-carousel-item">
                 <!-- text and logo -->
                 <div class="onepoint-client-carousel-description">
                     <div>
@@ -368,7 +361,7 @@
 
                 <!-- Carousel video -->
                 <div class="onepoint-client-carousel-video-iframe">
-                    <iframe title="vimeo-player" name="carousel video "
+                    <iframe title="vimeo-player"
                         src="https://player.vimeo.com/video/395532608?title=0&byline=0&portrait=0?api=1&api=1&player_id=vvvvimeoVideo-1723347"
                         width="640" height="360" frameborder="0" allowfullscreen></iframe>
                 </div>
@@ -388,7 +381,7 @@
         </div>
 
         <!-- arrow right -->
-        <div class="onepoint-client-carousel-arrow-right right-arrow">
+        <div class="onepoint-client-carousel-arrow-right">
             <img src="https://cdn-icons-png.flaticon.com/512/130/130884.png" alt="Right Arrow" />
         </div>
     </div>
@@ -397,10 +390,10 @@
 
 <script>
     document.addEventListener('DOMContentLoaded', () => {
-        const carouselInner = document.querySelector('.carousel-inner');
-        const leftArrow = document.querySelector('.left-arrow');
-        const rightArrow = document.querySelector('.right-arrow');
-        const carouselItems = document.querySelectorAll('.carousel-item');
+        const carouselInner = document.querySelector('.onepoint-client-carousel-inner');
+        const leftArrow = document.querySelector('.onepoint-client-carousel-arrow-left');
+        const rightArrow = document.querySelector('.onepoint-client-carousel-arrow-right');
+        const carouselItems = document.querySelectorAll('.onepoint-client-carousel-item');
         const dotsContainer = document.querySelector('.dots-container');
         const totalItems = carouselItems.length;
         let currentIndex = 0;
